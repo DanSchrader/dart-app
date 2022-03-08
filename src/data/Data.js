@@ -1,4 +1,4 @@
-export default function Data() {
+export default function data() {
   return [
     { index: '1', single: 1, double: 2, triple: 3 },
     { index: '2', single: 2, double: 4, triple: 6 },

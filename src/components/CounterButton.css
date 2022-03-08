@@ -1,26 +1,33 @@
+.ButtonList {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 5px;
+}
+
 .CounterButton {
   padding: 0;
   height: 48px;
   display: grid;
-  grid-template-columns: 48px 48px 48px;
+  grid-template-columns: 1fr 1fr 1fr;
+  border: solid 1px #666666;
 }
 
-.Number {
+.Single {
   color: white;
   background-color: black;
-  border: solid 1px #666666;
+  border: none;
   border-radius: 10px 0 0 10px;
 }
 
 .Double {
   color: white;
   background-color: #222222;
-  border: solid 1px #666666;
+  border: none;
 }
 
 .Triple {
   color: white;
   background-color: #444444;
-  border: solid 1px #666666;
+  border: none;
   border-radius: 0 10px 10px 0;
 }

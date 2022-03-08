@@ -1,9 +1,9 @@
 import './CounterButton.css';
 
-export default function CounterButton() {
+export default function CounterButton({ number }) {
   return (
     <div className="CounterButton">
-      <button className="Number">20</button>
+      <button className="Single">{number}</button>
       <button className="Double">x2</button>
       <button className="Triple">x3</button>
     </div>
