@@ -16,7 +16,7 @@ const ButtonItemDouble = styled.li`
 
 const DoubleCount = styled.button`
   color: white;
-  background-color: #222222;
+  background-color: #212121;
   border: none;
   flex-grow: 1;
 `;

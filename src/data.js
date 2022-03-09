@@ -19,7 +19,6 @@ const data = [
   { name: '18', id: 18, single: 18, double: 36, triple: 54 },
   { name: '19', id: 19, single: 19, double: 38, triple: 57 },
   { name: '20', id: 20, single: 20, double: 40, triple: 60 },
-  { name: '25', id: 25, single: 25, double: 50, triple: 0 },
 ];
 
 export default data;

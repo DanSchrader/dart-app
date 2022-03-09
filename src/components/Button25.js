@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 
-export default function SingleButton({ name }) {
+export default function Button25() {
   return (
     <ButtonItemSingle>
-      <SingleCount>{name}</SingleCount>
+      <SingleCount>25</SingleCount>
     </ButtonItemSingle>
   );
 }

@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 
-export default function TripleButton() {
+export default function Button50() {
   return (
     <ButtonItemTriple>
-      <TripleCount>x3</TripleCount>
+      <TripleCount>x2</TripleCount>
     </ButtonItemTriple>
   );
 }
@@ -16,7 +16,7 @@ const ButtonItemTriple = styled.li`
 
 const TripleCount = styled.button`
   color: white;
-  background-color: #434343;
+  background-color: #212121;
   border: none;
   border-radius: 0 10px 10px 0;
   flex-grow: 1;
