@@ -3,10 +3,10 @@ import SingleButton from './SingleButton';
 import DoubleButton from './DoubleButton';
 import TripleButton from './TripleButton';
 
-export default function CounterGrid() {
+export default function CounterGrid({ name }) {
   return (
     <ButtonGrid>
-      <SingleButton />
+      <SingleButton name={name} />
       <DoubleButton />
       <TripleButton />
     </ButtonGrid>

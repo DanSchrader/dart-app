@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export default function DoubleButton() {
   return (
     <ButtonItemDouble>
-      <DoubleCount>2</DoubleCount>
+      <DoubleCount>x2</DoubleCount>
     </ButtonItemDouble>
   );
 }

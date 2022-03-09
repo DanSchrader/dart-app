@@ -1,22 +1,23 @@
-import './App.css';
-import CounterGrid from './components/CounterGrid';
-import data from './data';
+import { Routes, Route } from 'react-router-dom';
 import styled from 'styled-components';
+import HomePage from './pages/HomePage';
+import DartCounterPage from './pages/DartCounterPage';
+import ScorekeeperPage from './pages/ScorekeeperPage';
+import Navigation from './components/Navigation';
 
 export default function App() {
   return (
-    <div className="App">
-      <ButtonContainer>
-        {data.map((counter) => {
-          return <CounterGrid key={counter.id} />;
-        })}
-      </ButtonContainer>
-    </div>
+    <AppContainer className="App">
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/dartcounter" element={<DartCounterPage />} />
+        <Route path="/scorekeeper" element={<ScorekeeperPage />} />
+      </Routes>
+      <Navigation />
+    </AppContainer>
   );
 }
 
-const ButtonContainer = styled.section`
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 5px;
+const AppContainer = styled.div`
+  font-family: sans-serif;
 `;

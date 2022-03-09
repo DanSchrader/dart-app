@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export default function TripleButton() {
   return (
     <ButtonItemTriple>
-      <TripleCount>3</TripleCount>
+      <TripleCount>x3</TripleCount>
     </ButtonItemTriple>
   );
 }
