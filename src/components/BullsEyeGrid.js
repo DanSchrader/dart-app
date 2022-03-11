@@ -15,7 +15,7 @@ const ButtonGrid = styled.ul`
   list-style: none;
   padding: 0;
   margin: 0;
-  height: 40px;
+  height: 48px;
   width: 30vw;
   display: grid;
   grid-template-columns: 1fr 1fr;
