@@ -21,9 +21,10 @@ const DartHelperTitle = styled.h1`
   background-color: #101010;
   color: #eee;
   font-size: 2rem;
+  font-weight: 900;
   text-align: center;
-  padding: 7px 0;
   margin: 0;
+  padding: 0;
   height: 48px;
   width: 100vw;
   border-bottom: solid 1px #555;
