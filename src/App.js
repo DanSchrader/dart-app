@@ -19,7 +19,7 @@ export default function App() {
 }
 
 const AppContainer = styled.div`
-  font-family: sans-serif;
+  font-family: 'Roboto', sans-serif;
   position: relative;
   padding: 50px 0;
 `;

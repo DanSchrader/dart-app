@@ -27,8 +27,8 @@ const DartHelperTitle = styled.h1`
   background-color: #101010;
   color: #eee;
   font-size: 2rem;
+  font-weight: 900;
   text-align: center;
-  padding: 7px 0;
   margin: 0;
   height: 48px;
   width: 100vw;
@@ -49,14 +49,15 @@ const DartHelperContainer = styled.form`
 const DartHelperLabel = styled.label`
   color: #eee;
   font-size: 114%;
+  font-weight: 900;
   margin-top: 20px;
 `;
 
 const DartHelperSelect = styled.select`
-  width: 50vw;
+  width: 75vw;
   height: 3rem;
   font-size: 200%;
-  font-weight: bold;
+  font-weight: 900;
   text-align: center;
 `;
 
@@ -64,7 +65,7 @@ const DartHelperInput = styled.input`
   color: white;
   background-color: #656565;
   border: none;
-  width: 50vw;
+  width: 75vw;
   height: 3rem;
   border-radius: 5px;
   font-size: 114%;
@@ -73,8 +74,8 @@ const DartHelperInput = styled.input`
 
 const CreateButton = styled.button`
   height: 3rem;
-  width: 50vw;
-  font-weight: bold;
+  width: 75vw;
+  font-weight: 900;
   font-size: 114%;
   margin-top: 50px;
 `;
