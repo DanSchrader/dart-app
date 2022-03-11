@@ -11,13 +11,14 @@ export default function SingleButton({ name }) {
 const ButtonItemSingle = styled.li`
   padding: 0;
   margin: 0;
-  display: flex;
+  display: grid;
 `;
 
 const SingleCount = styled.button`
-  color: white;
+  color: #eee;
   background-color: #101010;
   border: none;
   border-radius: 10px 0 0 10px;
-  flex-grow: 1;
+  padding: 0;
+  margin: 0;
 `;

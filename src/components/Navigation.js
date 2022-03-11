@@ -4,34 +4,39 @@ import { NavLink } from 'react-router-dom';
 export default function Navigation() {
   return (
     <Nav>
-      <LinkStyled to="/">Homepage</LinkStyled>
-      <LinkStyled to="/scorekeeper">Scorekeeper</LinkStyled>
+      <LinkStyled to="/">Dart Helper</LinkStyled>
       <LinkStyled to="/dartcounter">Dart Counter</LinkStyled>
+      <LinkStyled to="/history">History</LinkStyled>
     </Nav>
   );
 }
 
 const LinkStyled = styled(NavLink)`
-  display: flex;
+  display: grid;
   justify-content: center;
   align-items: center;
   text-decoration: none;
-  color: white;
-  width: 100%;
+  color: #eee;
   background: #101010;
+  margin: 0;
+  padding: 0;
 
   &.active {
-    background: #434343;
-    color: white;
+    background: #ddd;
+    color: #101010;
   }
 `;
 
 const Nav = styled.nav`
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   background: #555555;
-  color: white;
-  height: 40px;
-  border-top: solid 1px #555555;
+  height: 48px;
+  width: 100vw;
+  border-top: solid 1px #555;
   gap: 1px;
+  position: fixed;
+  bottom: 0px;
+  margin: 0;
+  padding: 0;
 `;

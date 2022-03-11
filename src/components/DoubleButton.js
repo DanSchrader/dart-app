@@ -11,12 +11,13 @@ export default function DoubleButton() {
 const ButtonItemDouble = styled.li`
   padding: 0;
   margin: 0;
-  display: flex;
+  display: grid;
 `;
 
 const DoubleCount = styled.button`
-  color: white;
+  color: #eee;
   background-color: #212121;
   border: none;
-  flex-grow: 1;
+  padding: 0;
+  margin: 0;
 `;

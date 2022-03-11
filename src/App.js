@@ -1,17 +1,17 @@
 import { Routes, Route } from 'react-router-dom';
 import styled from 'styled-components';
-import HomePage from './pages/HomePage';
+import DartHelperPage from './pages/DartHelperPage';
+import HistoryPage from './pages/HistoryPage';
 import DartCounterPage from './pages/DartCounterPage';
-import ScorekeeperPage from './pages/ScorekeeperPage';
 import Navigation from './components/Navigation';
 
 export default function App() {
   return (
     <AppContainer className="App">
       <Routes>
-        <Route path="/" element={<HomePage />} />
+        <Route path="/" element={<DartHelperPage />} />
         <Route path="/dartcounter" element={<DartCounterPage />} />
-        <Route path="/scorekeeper" element={<ScorekeeperPage />} />
+        <Route path="/history" element={<HistoryPage />} />
       </Routes>
       <Navigation />
     </AppContainer>
@@ -20,4 +20,6 @@ export default function App() {
 
 const AppContainer = styled.div`
   font-family: sans-serif;
+  position: relative;
+  padding: 50px 0;
 `;

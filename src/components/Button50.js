@@ -11,13 +11,14 @@ export default function Button50() {
 const ButtonItemTriple = styled.li`
   padding: 0;
   margin: 0;
-  display: flex;
+  display: grid;
 `;
 
 const TripleCount = styled.button`
-  color: white;
+  color: #eee;
   background-color: #212121;
   border: none;
   border-radius: 0 10px 10px 0;
-  flex-grow: 1;
+  padding: 0;
+  margin: 0;
 `;
