@@ -5,7 +5,6 @@ export default function Navigation() {
   return (
     <Nav>
       <LinkStyled to="/">Dart Helper</LinkStyled>
-      <LinkStyled to="/dartcounter">Dart Counter</LinkStyled>
       <LinkStyled to="/history">History</LinkStyled>
     </Nav>
   );
@@ -29,7 +28,7 @@ const LinkStyled = styled(NavLink)`
 
 const Nav = styled.nav`
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   background: #555555;
   height: 48px;
   width: 100vw;

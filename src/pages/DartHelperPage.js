@@ -1,10 +1,14 @@
+import { useState } from 'react';
 import styled from 'styled-components';
 
-export default function DartHelper() {
+export default function DartHelper({ onCreateGame }) {
+  const [playerNames, setPlayerNames] = useState('');
+  const disabled = playerNames === '';
+
   return (
     <>
       <DartHelperTitle>Dart Helper</DartHelperTitle>
-      <DartHelperContainer action="#">
+      <DartHelperForm action="#" onSubmit={handleSubmit} autoComplete="off">
         <DartHelperLabel>Select your game</DartHelperLabel>
         <DartHelperSelect>
           <option value="301">301</option>
@@ -16,11 +20,21 @@ export default function DartHelper() {
         <DartHelperInput
           type="text"
           placeholder="Jane, John, Jill, Jack..."
+          onChange={(event) => setPlayerNames(event.target.value)}
+          value={playerNames}
+          required
         ></DartHelperInput>
-        <CreateButton type="submit">CREATE GAME</CreateButton>
-      </DartHelperContainer>
+        <CreateButton disabled={disabled}>CREATE GAME</CreateButton>
+      </DartHelperForm>
     </>
   );
+
+  function handleSubmit(event) {
+    event.preventDefault();
+    onCreateGame({
+      playerNames: playerNames.split(',').map((name) => name.trim()),
+    });
+  }
 }
 
 const DartHelperTitle = styled.h1`
@@ -37,7 +51,7 @@ const DartHelperTitle = styled.h1`
   top: 0px;
 `;
 
-const DartHelperContainer = styled.form`
+const DartHelperForm = styled.form`
   display: grid;
   align-content: center;
   justify-items: center;

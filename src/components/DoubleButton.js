@@ -1,9 +1,13 @@
-import styled from 'styled-components';
+import useToggle from '../hooks/useToggle';
+import styled, { css } from 'styled-components';
 
 export default function DoubleButton() {
+  const [toggledButton, setToggledButton] = useToggle(false);
   return (
     <ButtonItemDouble>
-      <DoubleCount>x2</DoubleCount>
+      <DoubleCount toggledButton={toggledButton} onClick={setToggledButton}>
+        x2
+      </DoubleCount>
     </ButtonItemDouble>
   );
 }
@@ -20,4 +24,11 @@ const DoubleCount = styled.button`
   border: none;
   padding: 0;
   margin: 0;
+
+  ${({ toggledButton }) =>
+    toggledButton &&
+    css`
+      background-color: #eee;
+      color: #101010;
+    `}
 `;

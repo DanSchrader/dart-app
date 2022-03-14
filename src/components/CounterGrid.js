@@ -22,6 +22,6 @@ const ButtonGrid = styled.ul`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   border: none;
-  border-radius: 10px;
+  border-radius: 5px;
   box-shadow: #555555 0px 1px 2px 0px, #222222 0px 2px 6px 2px;
 `;
